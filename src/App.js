@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "./components/Button";
 import "./App.css";
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
         return (
             <div className="app">
                 <p>Number:{this.state.number}</p>
-                <button onClick={() => this.handleClick()}>Adds One</button>
+                <Button handleClick={this.handleClick} />
             </div>
         );
     }
